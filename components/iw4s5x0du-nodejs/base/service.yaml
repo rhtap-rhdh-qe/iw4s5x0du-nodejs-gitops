@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: iw4s5x0du-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: iw4s5x0du-nodejs 
+  name: iw4s5x0du-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: iw4s5x0du-nodejs 
